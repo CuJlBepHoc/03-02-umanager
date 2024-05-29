@@ -44,7 +44,7 @@ type UsersService struct {
 }
 
 type UsersGRPCConfig struct {
-	Addr    string        `env:"ADDR,default=:52000"`
+	Addr    string        `env:"ADDR,default=:53000"`
 	Timeout time.Duration `env:"TIMEOUT,default=10s"`
 }
 
@@ -94,6 +94,6 @@ type ApiGWService struct {
 	Addr            string        `env:"ADDR,default=:8080"`
 	ReadTimeout     time.Duration `env:"READ_TIMEOUT,default=30s"`
 	WriteTimeout    time.Duration `env:"WRITE_TIMEOUT,default=30s"`
-	UsersClientAddr string        `env:"USERS_CLIENT_ADDR,default=:52000"`
+	UsersClientAddr string        `env:"USERS_CLIENT_ADDR,default=:53000"`
 	LinksClientAddr string        `env:"USERS_CLIENT_ADDR,default=:51000"`
 }
